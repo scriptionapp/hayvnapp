@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="-50dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_logo_dark_nobg" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:fontFamily="@font/asenine"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-75dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/hamburger_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_menu" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nav_add_case"
+            style="@style/txt_menu"
+            android:drawableStart="@drawable/ic_add_circle_outline_black"
+            android:gravity="center"
+            android:text="@string/add_another_case" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id='@+id/getting_legal_help_section1'
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/getting_legal_help"
+                android:textAllCaps="true" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#E0E0E0" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nav_dashboard"
+            style="@style/txt_menu"
+            android:drawableStart="@drawable/ic_assessment_black"
+            android:gravity="center"
+            android:text="@string/dashboard" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/settings"
+                android:textAllCaps="true" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#E0E0E0" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nav_account_settings"
+            style="@style/txt_menu"
+            android:drawableStart="@drawable/ic_settings_black"
+            android:gravity="center"
+            android:text="@string/settings" />
+
+        <Button
+            android:id="@+id/nav_faq"
+            style="@style/txt_menu"
+            android:drawableStart="@drawable/ic_school_black"
+            android:gravity="center"
+            android:text="@string/faq" />
+
+        <Button
+            android:id="@+id/sync_data"
+            style="@style/txt_menu"
+            android:drawableStart="@drawable/ic_cloud_circle_black_24dp"
+            android:gravity="center"
+            android:text="@string/sync_data" />
+
+        <Button
+            android:id="@+id/nav_sign_out"
+            android:layout_marginTop="25dp"
+            style="@style/txt_menu"
+            android:drawableStart="@drawable/ic_arrow_back"
+            android:gravity="center"
+            android:text="@string/logout" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="100dp"
+            android:text="@string/all_right"
+            android:gravity="center" />
+
+
+    </LinearLayout>

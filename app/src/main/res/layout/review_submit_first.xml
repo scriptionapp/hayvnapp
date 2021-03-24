@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15pt"
+            android:id="@+id/submit_tv1"
+            android:text="@string/lawyer_about_submit"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/submit_tv1"
+            android:id="@+id/tv1"
+            android:text="@string/summary"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:text=""
+            android:id="@+id/summary_edt_txt"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/tv1"
+            android:gravity="top"
+            android:lines="12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_submit_next1"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        style="@style/btnBgLightBlue"
+        android:text="@string/next" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+@startuml
+
+actor user
+participant app
+participant phone
+participant firestore as fs
+participant CloudStorage as cs
+
+=== Standard Story (not quick file, no attachments) ==
+user -> app: press "New Story"
+app -> user: show story creation screen
+user -> app: enter details, press save
+app -> fs: send StoryTemporary(description, occurredAt)
+fs -> fs: save
+fs -> app: return Story(id, description, ocurredAt, createdAt, updatedAt, attachments)
+app -> app: update local story details
+app -> user: transition to story list screen
+
+=== Quick Image ==
+note over app, phone
+I would recommend we don't implement until standard story interface
+is done.
+end note
+
+=== Quick Recording ==
+note over app, phone
+I would recommend we don't implement until standard story interface
+is done.
+end note
+
+
+
+@enduml

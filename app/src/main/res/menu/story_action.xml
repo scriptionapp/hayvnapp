@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/copy_story_action"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="@string/copy_to_clipboard" />
+
+    <item
+        android:id="@+id/move_story_action"
+        android:icon="@android:drawable/ic_input_get"
+        android:title="Move" />
+
+    <item
+        android:id="@+id/delete_story_action"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/delete" />
+
+
+</menu>

@@ -1,0 +1,17 @@
+@startuml
+
+actor user
+participant app
+participant firestore as fs
+
+user -> app: press "New Case"
+app -> user: show case creation screen
+user -> app: enter details, press save
+app -> fs: send CaseTemporary(name, summary)
+fs -> fs: save
+fs -> app: return Case(id, name, summary, created_at, updated_at, submitted_at, submitted)
+app -> app: update local case details
+app -> user: transition to story list screen/case details screen
+
+
+@enduml

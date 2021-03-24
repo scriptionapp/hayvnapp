@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/rename_case_action"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Rename" />
+
+    <item
+        android:id="@+id/modify_smr_case_action"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Modify summary" />
+
+    <item
+        android:id="@+id/submit_case_action"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="Submit" />
+
+    <item
+        android:id="@+id/revoke_submit_case_action"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="Revoke submission" />
+
+    <item
+        android:id="@+id/delete_case_action"
+        android:icon="@android:drawable/ic_delete"
+        android:title="Delete" />
+
+</menu>
+

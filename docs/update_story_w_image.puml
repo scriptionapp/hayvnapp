@@ -1,0 +1,49 @@
+@startuml
+
+actor user
+participant app
+participant phone
+participant firestore as fs
+participant CloudStorage as cs
+
+=== Update Story, attach file (image, new photo) ==
+user -> app: press existing story
+app -> user: show story details
+user -> app: press "Attach File"
+app -> user: show Prompt
+user -> app: press "New Photo"
+app -> user: prompt for camera permissions
+
+alt user approves camera permissions
+  user -> app: OK
+  app -> phone: transition to camera
+  user -> phone: take picture of relevant item
+  phone -> app: pass image reference
+  app -> user: prompt for name
+  user -> app: enter name or accept default
+  app -> app: calculate name of resource = \n "cloudstorage_domain/$personal_bucket/$case_id/$story_id/$name"
+  app -> cs: upload ImageBinary
+  cs -> app: upload confirmation
+  app -> fs: send image path
+  fs -> fs: update story and attachment record
+  fs -> app: OK
+  app -> user: show image line item (thumbnailPreview, fileName)
+
+else user disallows permissions
+  user -> app: NOT OK
+  app -> user: show error message
+  note over app, user
+  "There was an error accessing the camera.
+  Ensure you gave permissions to Havyn to access your camera.
+  Edit from Settings > Havyn > Camera > OK"
+  end note
+
+end
+
+== Preview Image ==
+user -> app: click image line item
+app -> cs: fetch image URL
+cs -> app: send data
+app -> user: locally cache & show full image
+
+@enduml

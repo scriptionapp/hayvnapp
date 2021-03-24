@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+<!--    <external-path-->
+<!--        name="my_images"-->
+<!--        path="Android/data/com.example.leg2/files/Pictures" />-->
+    <files-path
+        name="my_images_folder"
+        path="images/" />
+    <files-path
+        name="my_audio_folder"
+        path="audio/" />
+    <files-path
+        name="my_other_folder"
+        path="other/" />
+    <external-path
+        name="my_root"
+        path="/" />
+</paths>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <include
+        layout="@layout/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="16dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="24dp" />
+
+    <com.hayvn.hayvnapp.Utilities.PasswordView
+        android:id="@+id/edt_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="16dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot_pwd"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:text="@string/forgot_password"
+        android:textColor="#5C5C5C"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        style="@style/btnBgLightBlue"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/sign_in" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/not_user"
+        android:textColor="@color/extra_light_gray"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/create_new_account"
+        android:textColor="#104E2D"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150pt"></LinearLayout>
+</LinearLayout>
+</ScrollView>

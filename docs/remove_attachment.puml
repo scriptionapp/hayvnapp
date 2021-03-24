@@ -1,0 +1,28 @@
+@startuml
+
+actor user
+participant app
+participant firestore as fs
+participant CloudStorage as cs
+
+=== Update Story, Delete File (recording or image) ==
+user -> app: press existing story
+app -> user: show story details
+user -> app: press "Delete" on file line item
+app -> user: confirm "Delete OK?"
+
+alt "User Confirms Deletion"
+  user -> app: OK
+  app -> fs: update story and file record, remove the file attachment
+  fs -> app: update confirmation
+  app -> cs: delete record on cs
+  cs -> app: delete confirmation
+  app -> user: "File was removed"
+
+else "User Rejects Deletion"
+  user -> app: Cancel
+  app -> app: noop
+
+end
+
+@enduml

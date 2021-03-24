@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:weightSum="6">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_id"
+            android:textStyle="bold"
+            android:layout_weight="2" />
+        <TextView
+            android:id="@+id/patient_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:weightSum="6">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hospital_id"
+            android:textStyle="bold"
+            android:layout_weight="2" />
+        <EditText
+            android:id="@+id/hospital_patient_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="@drawable/text_input_lower_border"
+            android:layout_weight="4" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_name"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edt_case_name"
+        android:background="@drawable/text_input_lower_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_patient_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_phone"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edt_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_input_lower_border"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/date_dob"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_input_lower_border"
+            android:ems="12"
+            android:padding="2pt"
+            android:layout_marginRight="15pt"
+            android:hint="@string/date_dob" />
+
+        <com.hayvn.hayvnapp.Helper.DatePickerExt
+            android:id="@+id/edt_dob_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/button_cal_dob"
+            android:background="@color/cardview_light_background"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_today_black" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/overarching_address"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/summary_log_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_patient_address"
+        android:ems="12"
+        android:padding="2pt"
+        android:background="@drawable/textviewedit_border"
+        android:textColor="@color/font" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/allergies"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/edt_allergies"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:background="@drawable/text_input_lower_border"
+            android:gravity="top"
+            android:lines="3" />
+        <CheckBox
+            android:id="@+id/no_allergies_chbox"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_known_allergies"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/med_hist"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_summary_med_hist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:background="@drawable/text_input_lower_border"
+        android:lines="8" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/drug_hist"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_summary_drug_hist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:background="@drawable/text_input_lower_border"
+        android:gravity="top"
+        android:lines="4" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/treat_past"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/summary_treat_no_history"
+        android:text="@string/treat_past_none"/>
+    <ExpandableListView
+        android:id="@+id/summary_expandable"
+        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:childDivider="@color/disabled_bg"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="200pt" />
+    </LinearLayout>
+</ScrollView>

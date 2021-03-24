@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5pt">
+
+    <ImageView
+        android:id="@+id/thumbnail_in_list"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/uploaded_image_thumbnail" />
+
+    <TextView
+        android:id="@+id/filename_in_the_list"
+        android:layout_width="0dp"
+        android:layout_height="15pt"
+        android:layout_weight="1"
+        android:textColor="@color/font"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/remove_file"
+        android:background="@drawable/ic_btn_bg_pink"
+        android:padding="1dp"
+        android:drawableStart="@drawable/ic_delete_forever_black_24dp"
+        android:paddingStart="2pt"
+        android:layout_height="15pt"
+        android:layout_width="15pt"/>
+
+
+</LinearLayout>

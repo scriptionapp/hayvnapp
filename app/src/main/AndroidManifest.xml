@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hayvn.hayvnapp">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher_background"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.hayvn.hayvnapp.HayvnApplication"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.hayvn.hayvnapp"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="XYZ" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.MainAppActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.NewStoryActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.FileBrowserActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.FaqActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.DashboardActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.SettingActivity"
+            android:label="@string/settings" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.ReviewSubmitActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.SummaryActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.PhotoshopActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.StoryActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.hayvn.hayvnapp.Activities.PinActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.hayvn.hayvnapp.Activities.CreatePinActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.ForgotActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.RegisterActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.LoginActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.ReauthenticateActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.UpdatePinActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.hayvn.hayvnapp.Activities.MapActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/app_name" />
+
+
+    </application>
+
+</manifest>

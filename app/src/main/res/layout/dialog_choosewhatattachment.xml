@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <Button
+        android:id="@+id/button_quickphoto_att"
+        style="@style/btnBgLightBlue"
+        android:layout_width="match_parent"
+        android:layout_margin="2dp"
+        android:drawableStart="@drawable/ic_camera_alt_white"
+        android:padding="10dp"
+        android:text="@string/quick_photo"
+        android:textSize="15pt" />
+
+    <Button
+        android:id="@+id/button_recording_att"
+        style="@style/btnBgLightBlue"
+        android:layout_width="match_parent"
+        android:layout_margin="2dp"
+        android:drawableStart="@drawable/ic_mic_white"
+        android:padding="10dp"
+        android:text="@string/quick_recording"
+        android:textSize="15pt" />
+
+    <Button
+        android:id="@+id/button_upload_att"
+        style="@style/btnBgLightBlue"
+        android:layout_width="match_parent"
+        android:layout_margin="2dp"
+        android:drawableStart="@drawable/ic_folder_open_white_24dp"
+        android:padding="10dp"
+        android:text="@string/quick_upload"
+        android:textSize="15pt" />
+</LinearLayout>

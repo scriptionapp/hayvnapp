@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#041056</color>
+    <color name="colorToolBar">#5FA19F</color>
+    <color name="colorLogoLight">#BBF8EF</color>
+    <color name="caseListItemBg">#6084A3</color>
+    <color name="colorBtn">#041056</color>
+    <color name="colorPaleGreen">#5FA19F</color>
+
+    <color name="hayvnColor">#35D486</color>
+    <color name="hayvnColorDark">#00B194</color>
+    <color name="disabled_bg">#CCCCCC</color>
+    <color name="disabled_font">#555555</color>
+
+
+
+    <color name="colorToolBar_old">#00B194</color>
+    <color name="colorPrimary_old">#4CC4E7</color>
+
+
+    <color name="colorPaleGreen_old">#88E1B4</color>
+
+    <color name="mainBg_old">#00B194</color>
+    <color name="colorAccent">#2F7DC7</color>
+
+    <color name="colorPrimaryDark">#00273D</color>
+    <color name="colorPrimaryDarkText">#FFFFFF</color>
+
+    <color name="colorPrimaryLight">#96C5CE</color>
+    <color name="colorPrimaryLight_old">#C0E0E2</color>
+
+    <color name="colorSilver">#D0D1CC</color>
+    <color name="colorSilverLight">#F0F5F5</color>
+
+    <color name="colorYellow">#F2C17B</color>
+    <color name="placeholder">#D59183</color>
+
+
+    <color name="font">#2E5B5B</color>
+
+    <color name="nav_grad_1">#B8FEFF</color>
+    <color name="nav_grad_2">#64DCF4</color>
+    <color name="nav_grad_3">#4CC4E7</color>
+
+    <color name="colorBtn_old">#3FD991</color>
+
+    <color name="extra_light_gray">#D0D0D0</color>
+</resources>

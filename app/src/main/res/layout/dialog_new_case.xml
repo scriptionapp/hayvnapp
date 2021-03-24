@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/add_another_case" />
+
+        <EditText
+            android:id="@+id/edt_newcase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/tet"
+            android:layout_marginHorizontal="25dp"
+            android:hint="@string/name" />
+
+<!--        <Spinner-->
+<!--            android:id="@+id/case_type_spinner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_marginHorizontal="25dp"-->
+<!--            android:hint="Type"-->
+<!--            android:spinnerMode="dropdown" />-->
+
+    <Button
+        android:id="@+id/btn_create"
+        style="@style/btnBgLightBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_newcase"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/add_the_case" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:color="@color/colorPrimaryDark"
+        android:padding="50dp"
+        android:paddingTop="90dp"
+        android:text="@string/lawyer_submit_confirm"/>
+
+
+    <ImageView
+        android:id="@+id/btn_understood_ok"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_done_white"
+        style="@style/btnOkOk"
+        android:contentDescription="@string/okok" />
+
+
+</RelativeLayout>

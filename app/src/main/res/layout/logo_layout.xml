@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="80dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basic Medical Records App"
+            android:fontFamily="@font/asenine"
+            android:textAlignment="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20pt"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ly1"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_logo_dark_nobg" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="powered by"
+                android:fontFamily="@font/asenine"
+                android:textAlignment="center"
+                android:layout_marginLeft="-90dp"
+                android:layout_marginTop="20dp"
+                android:textSize="9pt"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-75dp"
+            android:layout_marginLeft="150dp"
+            android:layout_below="@+id/ly1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:fontFamily="@font/asenine"
+                android:textSize="16pt"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="-50px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="-10px"
+            android:fontFamily="@font/asenine_smth"
+            android:text="by"
+            android:textColor="@color/hayvnColor"
+            android:textSize="12pt" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="75px"
+            android:layout_marginLeft="30px"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_hayvn_w_logo" />
+    </LinearLayout>
+</LinearLayout>

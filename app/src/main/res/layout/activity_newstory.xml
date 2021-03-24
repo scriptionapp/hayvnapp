@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/newlog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textinput_border"
+            android:hint="@string/title_mand"
+            android:inputType="text"
+            android:ems="12"
+            android:padding="2pt"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/font" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/story_score_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="5dp"
+                    android:text="@string/completeness"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+                <ProgressBar
+                    android:id="@+id/story_score_bar"
+                    style="@style/CustomProgressBarHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30px"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="3dp"
+                    android:max="100"
+                    android:paddingLeft="75dp"
+                    android:paddingRight="10dp"
+                    android:progressBackgroundTint="@color/cardview_shadow_end_color"
+                    android:progressTint="@color/design_default_color_secondary_variant"
+                    android:progressTintMode="src_over" />
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/newlog_eventdate_et"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textinput_border"
+                android:layout_below="@+id/story_score_view"
+                android:ems="12"
+                android:padding="2pt"
+                android:layout_marginRight="15pt"
+                android:hint="@string/date_mand" />
+
+            <com.hayvn.hayvnapp.Helper.DatePickerExt
+                android:id="@+id/newlog_eventdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newlog_eventdate_et"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/button_cal"
+                android:background="@color/cardview_light_background"
+                android:layout_width="15pt"
+                android:layout_height="15pt"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/story_score_view"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_today_black" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/newlog_witnesses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/witnesses"
+            android:ems="12"
+            android:padding="2pt"
+            android:background="@drawable/textinput_border"
+            android:inputType="text"
+            android:textColor="@color/font" />
+
+        <TextView
+            android:id="@+id/newlog_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/add_loc"
+            android:ems="12"
+            android:padding="2pt"
+            android:background="@drawable/textviewedit_border"
+            android:textColor="@color/font" />
+
+        <com.hayvn.hayvnapp.Helper.EditTextCursorWatcher
+            android:id="@+id/newlog_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textinput_border"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:padding="2pt"
+            android:gravity="top"
+            android:hint="@string/comments_mand"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:textColor="@color/font" />
+
+        <EditText
+            android:id="@+id/treatment_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textinput_border"
+            android:hint="@string/treatment_plan"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:padding="2pt"
+            android:lines="4"
+            android:textColor="@color/font"  />
+
+        <TextView
+            android:id="@+id/attach_log_file"
+            android:layout_width="wrap_content"
+            android:drawableStart="@drawable/ic_attachment"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/attach_file"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_files"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100px"
+                android:layout_marginRight="40pt"
+                android:layout_marginLeft="20pt"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100pt" />
+
+    </LinearLayout>
+
+</ScrollView>

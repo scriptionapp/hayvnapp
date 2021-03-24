@@ -1,0 +1,51 @@
+@startuml
+
+actor user
+participant app
+participant phone
+participant firestore as fs
+participant CloudStorage as cs
+
+=== Update Story, Attach File (recording) ==
+user -> app: press existing story
+app -> user: show story details
+user -> app: press "Attach File"
+app -> user: show Prompt
+user -> app: press "New Recording"
+app -> user: prompt for mic permissions
+
+alt user approves mic permissions
+
+  user -> app: OK
+  app -> user: transition to recorder app
+  user -> phone: make a recording
+  phone -> app: pass audio ref
+  app -> user: prompt for name
+  user -> app: enter name or accept default
+  app -> app: calculate name of resource = \n "cs-domain/$personal_bucket/$cas_id/$story_id/$name"
+  app -> cs: upload RecordingBinary
+  cs -> app: upload confirmation
+  app -> fs: send recording path
+  fs -> fs: update story and attachment record
+  fs -> app: OK
+  app -> user: show line item Name, recording length
+
+else user disallows permissions
+
+  user -> app: NOT OK
+  app -> user: show error message
+  note over app, user
+  "There was an error accessing the Microphone.
+  Ensure you gave permissions to Havyn to access your microphone.
+  Edit from Settings > Havyn > Microphone > OK"
+  end note
+
+end
+
+== Preview Recording ==
+  user -> app: click recording line item
+  app -> cs: fetch recording URL
+  cs -> app: send data
+  app -> user: locally cach & playback audio data
+
+@enduml

@@ -1,0 +1,43 @@
+@startuml
+
+actor user
+participant app
+participant firestore as fs
+
+participant lawyer_portal as lp
+actor lawyer
+
+== Case Submission ==
+user -> app: enter case details screen
+app -> user: show "submit" button
+user -> app: press "submit"
+
+app -> fs: update record for submission \n (submitted: true, submittedForReviewAt: time.now(), reviewed: false)
+fs -> app: update confirmation
+app -> app: update Case Details Screen \n (submitted, submittedForReviewAt, reviewed: false)
+
+== Reviewing A Case ==
+
+lawyer -> lp: access personal console
+lp -> fs: get cases, see oldest submitted not not reviewed first \n WHERE(submitted = true, reviewed = false) ORDER(reviewSubmittedAt asc)
+fs -> lp: LIST
+lp -> lawyer: LIST
+
+lawyer -> lp: open case detail
+lp -> lawyer: details
+lawyer -> lp: press "review this case"
+lp -> fs: update case (reviewed: true, reviewedAt: time.now())
+fs -> lp: update OK
+
+alt "Accept the Case"
+lawyer -> lp: press "Accept this Case"
+lp -> fs: update case(accepted: true, acceptedAt: time.now())
+fs -> lp: update OK
+
+else "Reject the Case"
+lawyer -> lp: press "Reject this Case"
+lp -> lp: noop
+
+end
+
+@enduml

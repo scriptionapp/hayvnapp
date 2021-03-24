@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:passcodeView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Activities.PinActivity">
+
+    <include
+        layout="@layout/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_temp_old_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/old_pin"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <online.devliving.passcodeview.PasscodeView
+        android:id="@+id/old_passcode_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="66dp"
+        passcodeView:digitColorBorder="@android:color/white"
+        passcodeView:digitColorFilled="@color/font"
+        passcodeView:controlColor="@color/colorLogoLight"
+        passcodeView:controlColorActivated="@color/colorPrimaryLight"
+        passcodeView:digitInnerRadius="10dp"
+        passcodeView:numDigits="4" />
+
+    <TextView
+        android:id="@+id/send_pin_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/resend_pin"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ly_new_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/enter_new_pin"
+            android:textSize="18sp" />
+
+        <online.devliving.passcodeview.PasscodeView
+            android:id="@+id/new_passcode_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="66dp"
+            passcodeView:digitColorBorder="@android:color/white"
+            passcodeView:digitColorFilled="@color/font"
+            passcodeView:controlColor="@color/colorLogoLight"
+            passcodeView:controlColorActivated="@color/colorPrimaryLight"
+            passcodeView:digitInnerRadius="10dp"
+            passcodeView:numDigits="4"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/confirm_pin"
+            android:textSize="18sp" />
+
+        <online.devliving.passcodeview.PasscodeView
+            android:id="@+id/confirm_passcode_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="66dp"
+            passcodeView:digitColorBorder="@android:color/white"
+            passcodeView:digitColorFilled="@color/font"
+            passcodeView:controlColor="@color/colorLogoLight"
+            passcodeView:controlColorActivated="@color/colorPrimaryLight"
+            passcodeView:digitInnerRadius="10dp"
+            passcodeView:numDigits="4"  />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancel_pin_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/cancel"
+        android:textSize="18sp" />
+</LinearLayout>
+</ScrollView>

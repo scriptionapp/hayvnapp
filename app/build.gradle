@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
+    dataBinding {
+        enabled = true
+    }
+    defaultConfig {
+        applicationId "com.hayvn.hayvnapp"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+
+
+}
+
+dependencies {
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    implementation 'online.devliving:passcodeview:1.0.3'
+    //noinspection GradleCompatible
+    implementation 'com.google.android.material:material:1.1.0-alpha06'
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha05'
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0-alpha01'
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.2.0-alpha01'
+    implementation 'androidx.room:room-runtime:2.1.0-beta01'
+    annotationProcessor 'androidx.room:room-compiler:2.1.0-beta01'
+
+    implementation files('libs/jbcrypt-0.3m.jar')
+    implementation files('libs/slf4j.jar')
+    implementation 'com.google.firebase:firebase-firestore:21.4.2' //18.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.google.firebase:firebase-auth:17.0.0'
+    implementation 'com.google.firebase:firebase-storage:17.0.0'
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+    //implementation 'com.google.firebase:firebase-messaging:18.0.0'
+    //implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    //implementation 'com.crashlytics.sdk.android:crashlytics:2.10.0'
+
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.0'
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    // FirebaseUI Storage only
+    //implementation 'com.firebaseui:firebase-ui-storage:4.3.1'
+
+
+
+
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+// Because RxAndroid releases are few and far between, it is recommended you also
+// explicitly depend on RxJava's latest version for bug fixes and new features.
+// (see https://github.com/ReactiveX/RxJava/releases for latest 2.x.x version)
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.15'
+    implementation 'org.jetbrains:annotations:15.0'
+
+
+
+
+    def room_version = "2.2.5"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version" // For Kotlin use kapt instead of annotationProcessor
+
+//    // optional - Kotlin Extensions and Coroutines support for Room
+//    implementation "androidx.room:room-ktx:$room_version"
+
+    // optional - RxJava support for Room
+    implementation "androidx.room:room-rxjava2:$room_version"
+//
+//    // optional - Guava support for Room, including Optional and ListenableFuture
+//    implementation "androidx.room:room-guava:$room_version"
+//
+//    // Test helpers
+//    testImplementation "androidx.room:room-testing:$room_version"
+
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- View background color -->
+    <solid
+        android:color="#FFFFFF" >
+    </solid>
+
+    <!-- View border color and width -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/colorSilver" >
+    </stroke>
+
+    <!-- The radius makes the corners rounded -->
+    <corners
+        android:topLeftRadius="1dp"
+        android:bottomRightRadius="1dp"
+        android:bottomLeftRadius="10dp"
+        android:topRightRadius="1dp">
+    </corners>
+
+</shape>

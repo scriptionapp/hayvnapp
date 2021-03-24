@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:passcodeView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Activities.PinActivity">
+
+    <include
+        layout="@layout/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/enter_new_pin"
+        android:textColor="@color/font"
+        android:textSize="18sp" />
+
+    <online.devliving.passcodeview.PasscodeView
+        android:id="@+id/passcode_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        passcodeView:digitColorBorder="@android:color/white"
+        passcodeView:digitColorFilled="@color/font"
+        passcodeView:controlColor="@color/colorLogoLight"
+        passcodeView:controlColorActivated="@color/colorPrimaryLight"
+        passcodeView:digitInnerRadius="10dp"
+        passcodeView:numDigits="4"  />
+
+</LinearLayout>

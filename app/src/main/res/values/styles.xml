@@ -1,0 +1,189 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+        <item name="actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+    </style>
+
+
+    <style name="CustomProgressBarHorizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="NotCloseable" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="MyTheme.ActionBarBrowseFilesStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <!---parent="@android:style/Widget.Holo.Light.ActionBar">-->
+        <item name="android:background">@color/colorToolBar</item>
+        <item name="background">@color/colorToolBar</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:color">#FFFFFF</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+    <!---parent="@android:style/Widget.Holo.Light.ActionBar">-->
+        <item name="android:background">@color/colorToolBar</item>
+        <item name="background">@color/colorToolBar</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:color">#FFFFFF</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:itemBackground">#FFFFFF</item>
+        <item name="android:headerBackground">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- Style to replace actionbar overflow icon. set item 'android:actionOverflowButtonStyle' in AppTheme -->
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_email</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="btnBackground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_btn_bg_blue</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:elevation" tools:ignore="NewApi">10dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="btnLighterBackground">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_btn_bg_action</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="btnRemove">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_btn_bg_red</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="btnprev">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_btn_bg_green</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="btnScrollDown">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_btn_bg_accent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="btnOkOk">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_btn_bg_accent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="btnBackgroundYellow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_btn_bg_yellow</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="btnBackgroundSubmitted">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_btn_bg_green</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="btnBgLightBlue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_btn_bg_lightblue</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="btnBgGray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_btn_bg_gray</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="txt_menu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">#8D8D8D</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">roboto_regular</item>
+        <item name="android:background">@drawable/nav_item_drawable</item>
+    </style>
+
+    <style name="profile_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">#8D8D8D</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">roboto_regular</item>
+        <item name="android:background">@drawable/ic_btn_nobg_palegreen</item>
+    </style>
+
+    <style name="thin_pale_outline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">roboto_regular</item>
+        <item name="android:background">@drawable/ic_btn_nobg_palegreen_thin</item>
+    </style>
+
+
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPaleGreen</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>
+
+</resources>

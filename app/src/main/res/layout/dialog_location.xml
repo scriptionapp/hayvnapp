@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/site_select"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/site"/>
+        <Spinner
+            android:id="@+id/list_sites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textinput_border" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_country"/>
+        <AutoCompleteTextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5pt"
+            android:paddingRight="5pt"
+            android:background="@drawable/textinput_border"
+            android:id="@+id/list_countries">
+        </AutoCompleteTextView>
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/district_dialog_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinput_border"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:padding="2pt"
+        android:gravity="top"
+        android:hint="@string/add_level1"
+        android:textColor="@color/font" />
+    <EditText
+        android:id="@+id/city_dialog_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinput_border"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:padding="2pt"
+        android:gravity="top"
+        android:hint="@string/add_level2"
+        android:textColor="@color/font" />
+
+    <EditText
+        android:id="@+id/upazila_dialog_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinput_border"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:padding="2pt"
+        android:gravity="top"
+        android:hint="@string/add_level3"
+        android:textColor="@color/font" />
+    <EditText
+        android:id="@+id/union_dialog_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinput_border"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:padding="2pt"
+        android:gravity="top"
+        android:hint="@string/add_level4"
+        android:textColor="@color/font" />
+    <EditText
+        android:id="@+id/village_dialog_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinput_border"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:padding="2pt"
+        android:gravity="top"
+        android:hint="@string/add_level5"
+        android:textColor="@color/font" />
+
+
+    <EditText
+        android:id="@+id/address_dialog_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinput_border"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:padding="2pt"
+        android:gravity="top"
+        android:hint="@string/add_level6"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:textColor="@color/font" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_addcoord_dialog_loc"
+            android:background="@drawable/textinput_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:drawableStart="@drawable/ic_edit_location_grey_24dp"
+            android:text="@string/add_cur_loc" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/coords_dialog_loc"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_later_dialog_loc"
+            style="@style/btnBgGray"
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:text="@string/later" />
+
+        <Button
+            android:id="@+id/btn_ok_dialog_loc"
+            style="@style/btnBgLightBlue"
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:text="@string/okok" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

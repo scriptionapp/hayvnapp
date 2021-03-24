@@ -1,0 +1,203 @@
+<resources>
+    <string name="app_name">Scription</string>
+
+    <string name="icon_folder">&#xf07c;</string>
+    <string name="icon_tick">&#xf00c;</string>
+
+    <!--
+        BASIC WORDS AND PHRASES
+     !-->
+    <string name="cancel">Cancel</string>
+    <string name="revoke">Revoke submission</string>
+    <string name="okok">OK</string>
+    <string name="warning">Warning</string>
+    <string name="nono">No</string>
+    <string name="backback">Back</string>
+    <string name="savesave">Save</string>
+    <string name="alert">Alert</string>
+    <string name="oksave">Ok, save</string>
+    <string name="exitwithoutsaving">Exit without saving</string>
+    <string name="save_recording">Save the recording?</string>
+    <string name="not_saved_yet">It has not been saved yet</string>
+    <string name="change">Change</string>
+    <string name="later">Later</string>
+    <string name="clearclear">Clear</string>
+    <string name="fixfix">Fix</string>
+    <string name="documents">Documents</string>
+    <string name="site">Site</string>
+    <string name="country">Country</string>
+    <string name="name">Name</string>
+    <string name="move">Move</string>
+    <string name="change_patient_photo">Change photo</string>
+    <string name="add_patient_photo">Add patient\'s photo</string>
+    <string name="move_into">Move into</string>
+    <string name="allergies">Allergies</string>
+    <string name="no_known_allergies">No known allergies</string>
+    <string name="terms_and_conds">Terms and conditions</string>
+    <string name="choose">Please choose</string>
+    <string name="none_found">None found</string>
+    <string name="settings">Settings</string>
+    <string name="notification">Push Notifications</string>
+    <string name="copy_to_clipboard">Copy to clipboard</string>
+    <string name="delete">Delete</string>
+    <string name="faq">FAQ</string>
+    <string name="summary">Summary</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="logout">Logout</string>
+    <string name="default_country">Default country</string>
+    <string name="next">Next</string>
+    <string name="not_now">Not Now</string>
+    <string name="start">Start</string>
+    <string name="starting_rec_val">00:00</string>
+    <string name="preview">Preview</string>
+    <string name="remove">Remove</string>
+    <string name="new_story">New Entry</string>
+    <string name="quick_photo">Quick Photo</string>
+    <string name="quick_recording">Quick Recording</string>
+    <string name="quick_upload">From Device</string>
+    <string name="save_the_record">Save the record</string>
+    <string name="check_load_more_stories">Load more data</string>
+    <string name="check_loading_more_stories">Loading data</string>
+    <string name="no_more_stories">No more data available</string>
+    <string name="create">Create</string>
+    <string name="select_file">Select a file</string>
+
+    <!--
+        ADDRESS STRINGS
+     !-->
+    <string name="add_country">Country</string>
+    <string name="add_level1">District</string>
+    <string name="add_level2">City</string>
+    <string name="add_level3">Upazila</string>
+    <string name="add_level4">Union</string>
+    <string name="add_level5">Village</string>
+    <string name="add_level6">Address</string>
+    <string name="overarching_address">Address</string>
+    <string name="add_patient_address">Add petient\'s address</string>
+
+    <!--
+        TREATMENT STRINGS
+     !-->
+    <string name="treat_date_start">Date start</string>
+    <string name="treat_date_end">Date end</string>
+    <string name="treat_drug_name">Drug/medication</string>
+    <string name="treat_comments">Comments</string>
+    <string name="treat_dosage">Dosage/amount</string>
+    <string name="treat_past">Past medications</string>
+    <string name="treat_past_none">No history to show</string>
+    <string name="treat_explain">You have edited the patient\'s treatment plan. Please provide more details.</string>
+
+    <!--
+        CONTACT INFO
+     !-->
+    <string name="email">Email address</string>
+    <string name="doctor_name">Your name</string>
+    <string name="patient_name">Patient\'s name</string>
+    <string name="patient_phone">Patient\'s phone number</string>
+    <string name="hospital_id">NID</string>
+    <string name="worker_type">Health worker ID</string>
+    <string name="patient_id">Patient ID</string>
+    <string name="date_dob">Date of birth</string>
+
+
+    <string name="fix_data_err">Fix data syncronisation errors</string>
+    <string name="keep_recency">Keep data up to</string>
+
+    <!--
+        ALERT DIALOG STRINGS
+     !-->
+    <string name="dialog_add_name">To add a treatment, please provide your name</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="add_another_case">Add a new patient</string>
+    <string name="add_the_case">Add patient</string>
+    <string name="getting_legal_help">Getting legal help</string>
+    <string name="all_right">All right reserved. Scription 2020</string>
+    <string name="review_and_submit">Review and Submit</string>
+    <string name="agree_and_submit">Agree and Submit</string>
+    <string name="lets_document">Let\'s document</string>
+    <string name="search_by">Search by name or ID</string>
+    <string name="intro1_1">We are here to help</string>
+    <string name="intro_helloagain_title">Welcome back!</string>
+    <string name="intro_email">team@hayvn.org</string>
+    <string name="start_a_case">Start a case</string>
+    <string name="terms_canditions">I agree to Terms and Conditions</string>
+    <string name="full_restore">Full restore: all records and all files (recommended to do when on WiFi)</string>
+    <string name="message_list">Message list</string>
+    <string name="files_list">Files list:</string>
+    <string name="title">Title</string>
+    <string name="title_mand">Title*</string>
+    <string name="date">Date of event (yyyy-mm-dd)</string>
+    <string name="date_mand">Date (yyyy-mm-dd)*</string>
+    <string name="comments_mand">Comments $diagnosis*</string>
+    <string name="witnesses">Witnesses</string>
+    <string name="add_loc">Add location</string>
+    <string name="add_cur_loc">Add current location</string>
+    <string name="select_location">Select Location</string>
+    <string name="treatment_plan">Treatment plan #medication</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="add_to_fav">Add to favourites</string>
+    <string name="sync_data">Synchronise data</string>
+    <string name="sync_sync">Sync</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="log_in">Log in</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reenter_password">Please re-enter your email and password below</string>
+    <string name="already_user">Already a member?</string>
+    <string name="not_user">Not a member?</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="password">Password</string>
+    <string name="completeness">Completeness</string>
+    <string name="enter_new_pin">Enter a New PIN</string>
+    <string name="confirm_pin">Confirm PIN</string>
+    <string name="reset_pin">Forgot PIN?</string>
+    <string name="update_pin">Update PIN</string>
+    <string name="old_pin">Enter the temporary PIN</string>
+    <string name="resend_pin">Send PIN again?</string>
+    <string name="current_pin">Current PIN</string>
+    <string name="med_hist">Medical history/comments:</string>
+    <string name="drug_hist">Drug history/current medications:</string>
+    <string name="attach_file"><u>Attach a file</u></string>
+    <string name="downloading_files">Downloading files</string>
+    <string name="uploaded_image_thumbnail">Uploaded image Thumbnail</string>
+    <string name="pin_set">PIN successfully set</string>
+    <string name="pin_saved">PIN successfully saved</string>
+    <string name="pin_error">Error saving PIN</string>
+    <string name="internet_problem">Problem accessing Internet, please try again later.</string>
+    <string name="pw_reset_ok">Password reset email has been set.</string>
+    <string name="enter_email">Please enter your email.</string>
+    <string name="enter_email_format">Please enter your email in the correct format.</string>
+    <string name="pin_notmatch">PINs do not match. Please try again.</string>
+    <string name="wrong_reset_pin">You entered a wrong temporary PIN. Please check your email again.</string>
+    <string name="wrong_pin">Wrong PIN. Try again.</string>
+    <string name="wrong_pin_exceeded">Wrong PIN. The number of attempts has been exceeded.</string>
+    <string name="time_limit">The time limit has expired. Please try resetting the PIN again.</string>
+    <string name="login_fail">Login failed. Please register with us.</string>
+    <string name="format_date">Please enter the date in yyyy-mm-dd format.</string>
+    <string name="reg_fail">Registration failed.</string>
+    <string name="internet_unstable">Internet connection not detected. App performance may suffer.</string>
+    <string name="user_exists_error">User with this email already exists. Try signing in to your account.</string>
+    <string name="location_permission_denied">Location Permission was denied. Exiting…</string>
+    <string name="permission_required_toast">We need to access your location.</string>
+    <string name="permission_rationale_location">Please agree to provide location data.</string>
+    <string name="please_reenter_pin_security">Please re-enter PIN for security.</string>
+    <string name="lawyer_pre_submit">Below is a snapshot of the case you are about to submit to lawyers.</string>
+    <string name="lawyer_withdraw">Withdraw your case from lawyers\' review?</string>
+
+
+    <!--
+        LONG SENTENCES
+     !-->
+    <string name="lawyer_about_submit">You are about to submit your case for legal review. Please make sure that summary contains all useful high-level information for the lawyer.</string>
+    <string name="lawyer_submit_confirm">Your case has been submitted for a review by our partners. You can track the progress of your case using Dashboard.</string>
+    <string name="intro1_2">It\'s always good to have organised records. Keep your notes and photos in one place, see the patient\'s history easily.</string>
+    <string name="intro2_1">Follow the suggested steps to document the patient\'s history.</string>
+    <string name="intro_helloagain">You can continue documenting your interactions with the patients. In case you have questions, please email us.</string>
+    <string name="partial_restore">Restore only records; download the files only when needed (this can always be changed later)</string>
+    <string name="intro3_1">A note from us</string>
+    <string name="intro3_2">We would like to hear from you.</string>
+    <string name="intro3_3">It is a Beta version of the app which means there can be stability issues! Please provide feedback, offer suggestions or ask questions.</string>
+    <string name="enable_files_access">Need to enable access to files to download them. Try again through Settings page.</string>
+</resources>
